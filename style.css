@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #FF7E5F, #feb47b);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.game-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.game-header p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Word Display */
+#word-display {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+    letter-spacing: 5px;
+    color: #FFF;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Inputs */
+input[type="text"] {
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    width: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #FF7E5F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FEB47B;
+}
+
+/* Game Footer */
+.game-footer p {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Animation for the Game */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    animation: fadeIn 1s ease-out;
+}
